@@ -255,7 +255,7 @@ body {
   align-items: center;
   gap: 25px;
   width: max-content;
-  animation: photoMove 70s linear infinite;
+  animation: photoMove 30s linear infinite;
 }
 
 .photo-card {
