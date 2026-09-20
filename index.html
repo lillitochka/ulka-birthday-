@@ -1,376 +1,252 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>с днём рождения, улько! 💗</title>
-
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>с днём рождения, улько! 💗</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- загрузка -->
-  <div id="loader">
-    <div class="loader-pusheen">🐱</div>
-    <div class="loader-text">для самой лучшей улько...</div>
-  </div>
+    <div id="loader">
+        <div class="loader-cat">🐱</div>
+        <div class="loader-text">для самой лучшей улько...</div>
+    </div>
 
-  <!-- музыка -->
-  <audio id="music" loop>
-    <source src="deti-online.com_-_happy-birthday-to-you.mp3" type="audio/mpeg">
-  </audio>
+    <audio id="music" src="music.mp3" loop></audio>
 
-  <button class="music-button" onclick="toggleMusic()">♫</button>
+    <button id="musicBtn" class="music-btn">♫</button>
 
-  <!-- плавающие элементы -->
-  <div class="floating-elements" id="floatingElements"></div>
+    <div class="floating-elements" id="floatingElements"></div>
 
-  <main>
+    <main>
 
-    <!-- главный экран -->
-    <section class="hero">
+        <!-- ГЛАВНЫЙ ЭКРАН -->
+        <section class="hero">
 
-      <div class="pusheen pusheen-left">🐱</div>
-      <div class="pusheen pusheen-right">🐱</div>
+            <div class="pusheen pusheen-left">🐱</div>
+            <div class="pusheen pusheen-right">🐱</div>
 
-      <div class="party-hat hat-one">🎉</div>
-      <div class="party-hat hat-two">🎊</div>
-      <div class="cake">🎂</div>
+            <div class="hero-content">
+                <div class="party">🎀 ✨ 🎂 ✨ 🎀</div>
 
-      <div class="hero-content">
-        <div class="small-text">для моей любимой улько</div>
+                <h1>с днём рождения,<br>уля! 💗</h1>
 
-        <h1>с днём<br>рождения, уля!</h1>
+                <div class="date">13.10.2026</div>
 
-        <div class="date">13.10.2026</div>
-
-        <div class="sparkle-line">✦ ˚₊‧ ✦ ‧₊˚ ✦</div>
-
-        <p class="hero-subtitle">
-          сегодня твой день 💗
-        </p>
-
-        <button class="scroll-button" onclick="scrollToSection('photos')">
-          смотреть дальше ↓
-        </button>
-      </div>
-
-    </section>
-
-
-    <!-- фоторента -->
-    <section id="photos" class="section photos-section">
-
-      <div class="section-title">
-        <span>📸</span>
-        <h2>наши фотографии</h2>
-        <span>🐱</span>
-      </div>
-
-      <p class="section-description">
-        наши самые лучшие моменты 💗
-      </p>
-
-      <div class="photo-tape">
-
-        <div class="photo-track">
-
-          <div class="photo-card photo-1">
-            <img src="1.jpg" alt="наше фото 1">
-          </div>
-
-          <div class="photo-card photo-2">
-            <img src="2.jpg" alt="наше фото 2">
-          </div>
-
-          <div class="photo-card photo-3">
-            <img src="3.jpg" alt="наше фото 3">
-          </div>
-
-          <div class="photo-card photo-4">
-            <img src="4.jpg" alt="наше фото 4">
-          </div>
-
-          <div class="photo-card photo-5">
-            <img src="5.jpg" alt="наше фото 5">
-          </div>
-
-          <div class="photo-card photo-6">
-            <img src="6.jpg" alt="наше фото 6">
-          </div>
-
-          <div class="photo-card photo-7">
-            <img src="7.jpg" alt="наше фото 7">
-          </div>
-
-          <div class="photo-card photo-8">
-            <img src="8.jpg" alt="наше фото 8">
-          </div>
-
-          <div class="photo-card photo-9">
-            <img src="9.jpg" alt="наше фото 9">
-          </div>
-
-          <div class="photo-card photo-10">
-            <img src="10.jpg" alt="наше фото 10">
-          </div>
-
-          <div class="photo-card photo-11">
-            <img src="11.jpg" alt="наше фото 11">
-          </div>
-
-          <div class="photo-card photo-12">
-            <img src="12.jpg" alt="наше фото 12">
-          </div>
-
-          <div class="photo-card photo-13">
-            <img src="13.jpg" alt="наше фото 13">
-          </div>
-
-          <div class="photo-card photo-14">
-            <img src="14.jpg" alt="наше фото 14">
-          </div>
-
-          <div class="photo-card photo-15">
-            <img src="15.jpg" alt="наше фото 15">
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="photo-note">
-        <span>🐾</span>
-        <span>15 фотографий наших моментов</span>
-        <span>🐾</span>
-      </div>
-
-    </section>
-
-
-    <!-- поздравление -->
-    <section class="section greeting-section">
-
-      <div class="pusheen-decoration">🐱</div>
-
-      <div class="section-title">
-        <span>💌</span>
-        <h2>поздравление</h2>
-        <span>💗</span>
-      </div>
-
-      <div class="greeting-card">
-
-        <div class="card-top">
-          <span>🐱</span>
-          <span>💗</span>
-          <span>🎂</span>
-        </div>
-
-        <div class="greeting-text">
-
-          <p>улько, с днём рождения! 💗</p>
-
-          <p>
-            мы познакомились на дне рождения у сони,
-            и я даже не думала, что с того момента мы
-            так хорошо сойдёмся. а общаемся мы уже
-            с 24 июля 2025 года 🥹
-          </p>
-
-          <p>
-            мне очень нравится, что ты идеально подходишь
-            мне по вайбу. с тобой можно смеяться с какой-нибудь
-            полной ерунды, обсуждать всё подряд и просто быть собой.
-            я очень ценю нашу дружбу и все наши приколы и моменты вместе
-          </p>
-
-          <p>
-            я хочу пожелать тебе побольше хороших друзей,
-            чтобы рядом всегда были люди, с которыми тебе
-            комфортно и весело. желаю тебе никогда не ссориться
-            с родными и друзьями, всегда быть здоровой и заниматься
-            именно тем, что тебе нравится
-          </p>
-
-          <p>
-            пусть у тебя будет много счастливых моментов,
-            крутых воспоминаний и поводов улыбаться.
-            надеюсь, что мы ещё очень много всего вместе
-            переживём и нас ждёт куча новых приколов 😭💗
-          </p>
-
-          <p class="greeting-final">
-            с днём рождения, киця! 🫶
-          </p>
-
-        </div>
-
-        <div class="card-bottom">
-          ✦ ˚₊‧ ✦ ‧₊˚ ✦
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- 10 причин -->
-    <section class="section reasons-section">
-
-      <div class="section-title">
-        <span>💗</span>
-        <h2>10 причин</h2>
-        <span>🐱</span>
-      </div>
-
-      <p class="section-description">
-        почему я тебя люблю
-      </p>
-
-      <div class="reasons-grid">
-
-        <div class="reason-card">
-          <div class="reason-number">01</div>
-          <div class="reason-text">за то, что с тобой всегда весело</div>
-        </div>
-
-        <div class="reason-card">
-          <div class="reason-number">02</div>
-          <div class="reason-text">за то, что ты всегда поддержишь меня</div>
-        </div>
-
-        <div class="reason-card">
-          <div class="reason-number">03</div>
-          <div class="reason-text">за наши бесконечные разговоры обо всём</div>
-        </div>
-
-        <div class="reason-card">
-          <div class="reason-number">04</div>
-          <div class="reason-text">за то, что с тобой можно быть собой</div>
-        </div>
-
-        <div class="reason-card">
-          <div class="reason-number">05</div>
-          <div class="reason-text">за все наши приколы, которые понимаем только мы</div>
-        </div>
-
-        <div class="reason-card">
-          <div class="reason-number">06</div>
-          <div class="reason-text">за то, что ты умеешь поднять мне настроение</div>
-        </div>
-
-        <div class="reason-card">
-          <div class="reason-number">07</div>
-          <div class="reason-text">за наши самые смешные моменты</div>
-        </div>
-
-        <div class="reason-card">
-          <div class="reason-number">08</div>
-          <div class="reason-text">за то, что ты всегда выслушаешь меня</div>
-        </div>
-
-        <div class="reason-card">
-          <div class="reason-number">09</div>
-          <div class="reason-text">за нашу дружбу, которую я очень ценю</div>
-        </div>
-
-        <div class="reason-card">
-          <div class="reason-number">10</div>
-          <div class="reason-text">просто потому что ты это ты</div>
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- мемы -->
-    <section class="section memes-section">
-
-      <div class="section-title">
-        <span>😂</span>
-        <h2>наши мемы</h2>
-        <span>🐱</span>
-      </div>
-
-      <p class="section-description">
-        это понимаем только мы
-      </p>
-
-      <div class="meme-wrapper">
-
-        <div class="meme-card" id="memeCard">
-
-          <div class="meme-front">
-            <div class="meme-pusheen">🐱</div>
-
-            <h3>наши мемы</h3>
-
-            <p>нажми, чтобы открыть</p>
-
-            <div class="flip-icon">↻</div>
-          </div>
-
-          <div class="meme-back">
-
-            <img id="memeImage" src="meme1.jpg" alt="наш мем">
-
-            <div class="meme-text" id="memeText">
-              йоу васап бро
+                <div class="tiny-hearts">♡ ♥ ♡ ♥ ♡</div>
             </div>
 
-            <div class="meme-counter" id="memeCounter">
-              1 / 5
+        </section>
+
+
+        <!-- МИЛЫЕ МОМЕНТЫ -->
+        <section class="photos-section reveal">
+
+            <div class="section-title">
+                <span>૮₍ ˶ᵔ ᵕ ᵔ˶ ₎ა</span>
+                <h2>милые моменты</h2>
+                <span>♡</span>
             </div>
 
-          </div>
+            <div class="photo-tape-wrapper">
+                <div class="photo-tape">
 
-        </div>
+                    <div class="photo-track">
 
-        <button class="meme-button" onclick="nextMeme()">
-          следующий мем →
-        </button>
+                        <div class="photo-item"><img src="1.jpg" alt=""></div>
+                        <div class="photo-item"><img src="2.jpg" alt=""></div>
+                        <div class="photo-item"><img src="3.jpg" alt=""></div>
+                        <div class="photo-item"><img src="4.jpg" alt=""></div>
+                        <div class="photo-item"><img src="5.jpg" alt=""></div>
+                        <div class="photo-item"><img src="6.jpg" alt=""></div>
+                        <div class="photo-item"><img src="7.jpg" alt=""></div>
+                        <div class="photo-item"><img src="8.jpg" alt=""></div>
+                        <div class="photo-item"><img src="9.jpg" alt=""></div>
+                        <div class="photo-item"><img src="10.jpg" alt=""></div>
+                        <div class="photo-item"><img src="11.jpg" alt=""></div>
+                        <div class="photo-item"><img src="12.jpg" alt=""></div>
+                        <div class="photo-item"><img src="13.jpg" alt=""></div>
+                        <div class="photo-item"><img src="14.jpg" alt=""></div>
+                        <div class="photo-item"><img src="15.jpg" alt=""></div>
 
-      </div>
+                    </div>
 
-    </section>
+                </div>
+            </div>
 
+            <div class="photo-note">маленькие милые моменты для тебя ♡</div>
 
-    <!-- финал -->
-    <section class="final-section">
-
-      <div class="final-pusheen">🐱</div>
-
-      <div class="final-sparkles">
-        ✦ ✧ ✦ ✧ ✦
-      </div>
-
-      <h2>
-        с днём рождения,<br>
-        киця! 💗
-      </h2>
-
-      <p>
-        пусть этот день будет таким же классным,
-        как ты
-      </p>
-
-      <div class="final-hearts">
-        ♡ ♥ ♡ ♥ ♡
-      </div>
-
-      <div class="footer-date">
-        13.10.2026
-      </div>
-
-    </section>
-
-  </main>
+        </section>
 
 
-  <script src="script.js"></script>
+        <!-- ПОЗДРАВЛЕНИЕ -->
+        <section class="greeting-section reveal">
+
+            <div class="cute-divider">୨୧ ───────── ୨୧</div>
+
+            <div class="greeting-card">
+
+                <div class="card-cat">🐱</div>
+
+                <h2>улько, с днём рождения! 💗</h2>
+
+                <p>
+                    улько, с днём рождения! 💗
+                </p>
+
+                <p>
+                    мы познакомились на дне рождения у сони, и я даже не думала, что с того момента мы так хорошо сойдёмся. а общаемся мы уже с 24 июля 2025 года 🥹
+                </p>
+
+                <p>
+                    мне очень нравится, что ты идеально подходишь мне по вайбу. с тобой можно смеяться с какой-нибудь полной ерунды, обсуждать всё подряд и просто быть собой. я очень ценю нашу дружбу и все наши приколы и моменты вместе
+                </p>
+
+                <p>
+                    я хочу пожелать тебе побольше хороших друзей, чтобы рядом всегда были люди, с которыми тебе комфортно и весело. желаю тебе никогда не ссориться с родными и друзьями, всегда быть здоровой и заниматься именно тем, что тебе нравится
+                </p>
+
+                <p>
+                    пусть у тебя будет много счастливых моментов, крутых воспоминаний и поводов улыбаться. надеюсь, что мы ещё очень много всего вместе переживём и нас ждёт куча новых приколов 😭💗
+                </p>
+
+                <p>
+                    с днём рождения, киця! 🫶
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- 10 ПРИЧИН -->
+        <section class="reasons-section reveal">
+
+            <div class="cute-divider">♡ ─────── ♡</div>
+
+            <h2>10 причин, почему я тебя люблю 💗</h2>
+
+            <div class="reasons-list">
+
+                <div class="reason">
+                    <span>01</span>
+                    <p>за то, что с тобой всегда весело</p>
+                </div>
+
+                <div class="reason">
+                    <span>02</span>
+                    <p>за то, что ты всегда поддержишь меня</p>
+                </div>
+
+                <div class="reason">
+                    <span>03</span>
+                    <p>за наши бесконечные разговоры обо всём</p>
+                </div>
+
+                <div class="reason">
+                    <span>04</span>
+                    <p>за то, что с тобой можно быть собой</p>
+                </div>
+
+                <div class="reason">
+                    <span>05</span>
+                    <p>за все наши приколы, которые понимаем только мы</p>
+                </div>
+
+                <div class="reason">
+                    <span>06</span>
+                    <p>за то, что ты умеешь поднять мне настроение</p>
+                </div>
+
+                <div class="reason">
+                    <span>07</span>
+                    <p>за наши самые смешные моменты</p>
+                </div>
+
+                <div class="reason">
+                    <span>08</span>
+                    <p>за то, что ты всегда выслушаешь меня</p>
+                </div>
+
+                <div class="reason">
+                    <span>09</span>
+                    <p>за нашу дружбу, которую я очень ценю</p>
+                </div>
+
+                <div class="reason">
+                    <span>10</span>
+                    <p>просто потому что ты это ты</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- МЕМЫ -->
+        <section class="memes-section reveal">
+
+            <div class="cute-divider">୨୧ ─────── ୨୧</div>
+
+            <h2>наши мемы 😭</h2>
+
+            <p class="meme-hint">нажимай на карточку ♡</p>
+
+            <div class="meme-wrapper">
+
+                <div class="meme-card" id="memeCard">
+
+                    <div class="meme-front">
+                        <div class="meme-cat">🐱</div>
+                        <h3>наши мемы</h3>
+                        <div class="tap">нажми ♡</div>
+                    </div>
+
+                    <div class="meme-back">
+
+                        <img id="memeImage" src="meme1.jpg" alt="">
+
+                        <div class="meme-text" id="memeText">
+                            йоу васап бро
+                        </div>
+
+                        <div class="meme-counter" id="memeCounter">
+                            1 / 5
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ФИНАЛ -->
+        <section class="final-section reveal">
+
+            <div class="final-cats">
+                🐱 💗 🐱
+            </div>
+
+            <h2>с днём рождения, киця! 💗</h2>
+
+            <p>
+                пусть этот день будет таким же классным, как ты
+            </p>
+
+            <div class="final-hearts">
+                ♡ ♥ ♡ ♥ ♡
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
