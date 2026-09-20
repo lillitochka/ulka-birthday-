@@ -743,3 +743,50 @@ body {
     height: 310px;
   }
 }
+.pusheen img,
+.loader-pusheen img,
+.pusheen-decoration img,
+.meme-pusheen img,
+.final-pusheen img {
+  width: 120px;
+  height: auto;
+  display: block;
+}
+
+.loader-pusheen img {
+  width: 90px;
+}
+
+.pusheen-decoration img {
+  width: 100px;
+}
+
+.meme-pusheen img {
+  width: 110px;
+}
+
+.final-pusheen img {
+  width: 130px;
+}
+
+@media (max-width: 650px) {
+  .pusheen img {
+    width: 85px;
+  }
+
+  .loader-pusheen img {
+    width: 70px;
+  }
+
+  .pusheen-decoration img {
+    width: 80px;
+  }
+
+  .meme-pusheen img {
+    width: 90px;
+  }
+
+  .final-pusheen img {
+    width: 105px;
+  }
+}
